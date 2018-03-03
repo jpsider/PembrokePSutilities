@@ -1,4 +1,4 @@
-function Invoke-DeployUtilities
+function Invoke-DeployUtilitieSet
 {
     <#
 	.DESCRIPTION
