@@ -2,6 +2,10 @@
 
 Common function for PembrokePS components
 
+## Build Status
+
+![Build status](https://ci.appveyor.com/api/projects/status/github/jpsider/PembrokePSutilities?branch=master&svg=true)
+
 ## GitPitch PitchMe presentation
 
 * [gitpitch.com/jpsider/PembrokePSutilities](https://gitpitch.com/jpsider/PembrokePSutilities)
