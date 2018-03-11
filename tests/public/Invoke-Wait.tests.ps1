@@ -6,7 +6,7 @@ Describe "Invoke-Wait function for $moduleName" {
         Invoke-Wait -Seconds 3 | Should be $null
         Assert-MockCalled -CommandName 'start-sleep' -Times 1 -Exactly       
     }
-    It "Should not Throw if the copy succeeds." {
+    It "Should not Throw if the wait succeeds." {
         Mock -CommandName 'start-sleep' -MockWith {}
         {Invoke-Wait -Seconds 3} | Should -Not -Throw
         Assert-MockCalled -CommandName 'start-sleep' -Times 2 -Exactly
