@@ -7,8 +7,10 @@ Describe "Get-LocalPropertySet function for $moduleName" {
         }
         Mock -CommandName 'get-content' -MockWith {
             $filedata = @'
-app.name=Test App
-app.version=1.2
+system.RestServer=localhost
+component.Id=1
+component.Type=Qman
+component.RestPort=8000
 '@ 
             return $filedata
         }

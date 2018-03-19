@@ -25,7 +25,7 @@ function Get-ComponentStatus {
         try
         {
             $ComponentType = $ComponentType.ToLower()
-            $ComponentStatusData = (Invoke-RestMethod -Method Get -Uri "http://$RestServer/PembrokePS/public/api/api.php/$ComponentType/$ComponentId" -UseBasicParsing).$ComponentType
+            $ComponentStatusData = Invoke-RestMethod -Method Get -Uri "http://$RestServer/PembrokePS/public/api/api.php/$ComponentType/$ComponentId" -UseBasicParsing
         }
         catch
         {
