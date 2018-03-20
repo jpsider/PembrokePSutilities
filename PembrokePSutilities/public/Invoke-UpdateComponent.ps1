@@ -8,6 +8,8 @@ function Invoke-UpdateComponent {
         A Rest Server is required.
     .PARAMETER Column
         A Column/Field is required.
+    .PARAMETER ComponentType
+        A ComponentType is required.
     .PARAMETER Value
         A Value is required.
 	.EXAMPLE
