@@ -10,7 +10,7 @@ function Get-LocalPropertySet {
         This file is generated during the deployment or Registration of tha Pembroke PS component.
     #>
     [CmdletBinding()]
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseDeclaredVarsMoreThanAssignments")]
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseDeclaredVarsMoreThanAssignments", "")]
     [OutputType([System.Object[]])]
     param(
         [Parameter(Mandatory=$true)][string]$PropertyFilePath
