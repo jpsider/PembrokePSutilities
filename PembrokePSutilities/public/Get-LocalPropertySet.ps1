@@ -27,7 +27,6 @@ function Get-LocalPropertySet {
                  }
                  $PpsProperties += $result;
              }
-             $PpsProperties
         }
         catch
         {

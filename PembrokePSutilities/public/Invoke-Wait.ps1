@@ -17,7 +17,7 @@ function Invoke-Wait
     )
     try
     {
-        start-sleep -s $script:Seconds
+        start-sleep -s $Seconds
     }
     catch
     {
