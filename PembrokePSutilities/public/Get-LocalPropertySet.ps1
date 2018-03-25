@@ -32,8 +32,7 @@ function Get-LocalPropertySet {
         {
             $ErrorMessage = $_.Exception.Message
             $FailedItem = $_.Exception.ItemName		
-            Write-Error "Error: $ErrorMessage $FailedItem"
-            Throw $_
+            Throw "Get-LocalPropertySet: $ErrorMessage $FailedItem"
         }
         $PpsProperties
     } else {

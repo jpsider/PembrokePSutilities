@@ -23,7 +23,6 @@ function Invoke-Wait
     {
         $ErrorMessage = $_.Exception.Message
         $FailedItem = $_.Exception.ItemName		
-        Write-Error "Error: $ErrorMessage $FailedItem"
-        Throw $_
+        Throw "Invoke-Wait: $ErrorMessage $FailedItem"
     }
 }
