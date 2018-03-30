@@ -18,6 +18,7 @@ function Get-LocalPropertySet {
     if (Test-Path -Path $PropertyFilePath) {
         try
         {
+            Write-LogLevel -Message "Gathering Local Properties" -Logfile "$LOG_FILE" -RunLogLevel CONSOLEONLY -MsgLevel CONSOLEONLY
             $PpsPropertiesHash = ConvertFrom-StringData (Get-Content $PropertyFilePath -raw)
             $PpsProperties = @()
             $PpsPropertiesHash | ForEach-Object {
@@ -36,7 +37,7 @@ function Get-LocalPropertySet {
         }
         $PpsProperties
     } else {
-        Throw "Property File path: $PropertyFilePath does not exist."
+        Throw "Get-LocalPropertySet: Property File path: $PropertyFilePath does not exist."
     }
     
 }

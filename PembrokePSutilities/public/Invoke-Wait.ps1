@@ -17,6 +17,7 @@ function Invoke-Wait
     )
     try
     {
+        Write-LogLevel -Message "Waiting $Seconds, Seconds" -Logfile "$LOG_FILE" -RunLogLevel CONSOLEONLY -MsgLevel CONSOLEONLY
         start-sleep -s $Seconds
     }
     catch
