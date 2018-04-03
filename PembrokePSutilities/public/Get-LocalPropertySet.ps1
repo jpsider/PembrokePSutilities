@@ -4,6 +4,8 @@ function Get-LocalPropertySet {
 		This function will gather Key value pairs from a properties file.
     .PARAMETER PropertyFilePath
         A path is Required.
+    .PARAMETER LOG_FILE
+        A LOG_FILE is optional.
 	.EXAMPLE
         Get-LocalPropertySet -PropertyFilePath c:\pps\qman\pembrokeps.properties
 	.NOTES
@@ -13,7 +15,8 @@ function Get-LocalPropertySet {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseDeclaredVarsMoreThanAssignments", "")]
     [OutputType([System.Object[]])]
     param(
-        [Parameter(Mandatory=$true)][string]$PropertyFilePath
+        [Parameter(Mandatory=$true)][string]$PropertyFilePath,
+        [string]$LOG_FILE = "C:\temp\nolog.log"
     )
     if (Test-Path -Path $PropertyFilePath) {
         try
