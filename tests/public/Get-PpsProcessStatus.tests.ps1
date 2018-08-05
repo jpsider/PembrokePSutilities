@@ -1,5 +1,9 @@
 $script:ModuleName = 'PembrokePSutilities'
 
+$here = (Split-Path -Parent $MyInvocation.MyCommand.Path) -replace 'tests', "$script:ModuleName"
+$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.Tests\.', '.'
+. "$here\$sut"
+
 Describe "Get-PpsProcessStatus function for $moduleName" {
     function Get-Process{}
     It "Should not Throw if the process exists." {
