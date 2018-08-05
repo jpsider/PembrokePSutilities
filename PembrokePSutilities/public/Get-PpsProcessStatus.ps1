@@ -14,7 +14,7 @@ function Get-PpsProcessStatus {
     param(
         [Parameter(Mandatory=$true)][string]$ProcessName
     )
-    try 
+    try
     {
         $ReturnData = Get-Process | Where-Object {($_.Name -eq "powershell") -and ($_.MainWindowTitle -like "*$ProcessName*")}
         $ReturnDataCount = ($ReturnData | Measure-Object).count
@@ -27,8 +27,7 @@ function Get-PpsProcessStatus {
     catch
     {
         $ErrorMessage = $_.Exception.Message
-        $FailedItem = $_.Exception.ItemName		
+        $FailedItem = $_.Exception.ItemName
         Throw "Get-PpsProcessStatus: $ErrorMessage $FailedItem"
     }
 }
-    

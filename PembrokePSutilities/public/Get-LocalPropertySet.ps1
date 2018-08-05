@@ -35,12 +35,11 @@ function Get-LocalPropertySet {
         catch
         {
             $ErrorMessage = $_.Exception.Message
-            $FailedItem = $_.Exception.ItemName		
+            $FailedItem = $_.Exception.ItemName
             Throw "Get-LocalPropertySet: $ErrorMessage $FailedItem"
         }
         $PpsProperties
     } else {
         Throw "Get-LocalPropertySet: Property File path: $PropertyFilePath does not exist."
     }
-    
 }
