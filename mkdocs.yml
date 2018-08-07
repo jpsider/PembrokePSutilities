@@ -1,11 +1,14 @@
 site_name: PembrokePSutilities
 repo_url: https://github.com/jpsider/PembrokePSutilities
 theme: readthedocs
+edit_uri: edit/master/docs/
 pages:
 - Home: index.md
 - PembrokePSutilities Basics:
   - What is PembrokePSutilities: about.md
   - Quick Start: Quick-Start-Installation-and-Example.md
-- Basic Commands:
-- Examples:
-- Acknowledgements: acknowledgements.md
+- Public Functions:
+  - Get-LocalPropertySet: Get-LocalPropertySet.md
+  - Get-PpsProcessStatus: Get-PpsProcessStatus.md
+  - Invoke-InstallRequiredModuleSet: Invoke-InstallRequiredModuleSet.md
+  - Invoke-Wait: Invoke-Wait.md

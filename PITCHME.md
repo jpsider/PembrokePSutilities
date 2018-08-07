@@ -19,4 +19,3 @@ For more information
 
 * [PembrokePSutilities.readthedocs.io](http://PembrokePSutilities.readthedocs.io)
 * [github.com/jpsider/PembrokePSutilities](https://github.com/jpsider/PembrokePSutilities)
-* [jpsider.github.io](https://jpsider.github.io)
